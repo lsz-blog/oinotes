@@ -1,0 +1,21 @@
+site_name: OI Notes
+
+theme:
+  name: material
+  language: zh
+  palette:
+    primary: purple
+    accent: indigo
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - search.suggest
+    - search.highlight
+    - search.share
+
+plugins:
+  - search:
+      lang: ja
+  - tags
+  
