@@ -40,6 +40,6 @@ jobs:
           publish_dir: ./
           publish_branch: gh-pages
           cname: notes.shuzhouliu.bio
-          keep_files: true
+          keep_files: false
           user_name: shuzhouliu
           user_email: shuzhou.liu@hotmail.com
