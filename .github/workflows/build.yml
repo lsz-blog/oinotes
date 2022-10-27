@@ -27,6 +27,19 @@ jobs:
         run: |
           curl https://raw.githubusercontent.com/pypa/pipenv/master/get-pipenv.py | python3
           pipenv install
+      - name: "Cache Node.js Dependencies"
+        uses: actions/cache@v2
+        with:
+          path: |
+            node_modules
+            */*/node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: "Install Node.js Dependencies"
+        if: steps.cache-node-modules.outputs.cache-hit != 'true'
+        run: |
+          npm --frozen-lockfile --production
       - name: "Install mkdocs-material"
         run: |
           pip install mkdocs-material
