@@ -9,6 +9,7 @@ copyright: "Copyright &copy; 2022 Shuzhou Liu"
 nav:
   - 基础算法:
     - 前缀和: basic/prefix-sum.md
+    - 排序: basic/sort.md
 
 theme:
   name: material
