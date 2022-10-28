@@ -10,6 +10,7 @@ nav:
   - 基础算法:
     - 前缀和: basic/prefix-sum.md
     - 排序: basic/sort.md
+    - 高精度: basic/bigint.md
 
 theme:
   name: material
