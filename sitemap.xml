@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
-         <loc>None</loc>
+         <loc>https://notes.shuzhouliu.bio/</loc>
+         <lastmod>2022-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://notes.shuzhouliu.bio/basic/prefix-sum/</loc>
          <lastmod>2022-10-28</lastmod>
          <changefreq>daily</changefreq>
     </url>
