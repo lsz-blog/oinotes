@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://notes.shuzhouliu.bio/basic/bigint/</loc>
+         <lastmod>2022-10-28</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://notes.shuzhouliu.bio/basic/prefix-sum/</loc>
          <lastmod>2022-10-28</lastmod>
          <changefreq>daily</changefreq>
