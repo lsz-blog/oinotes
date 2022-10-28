@@ -344,10 +344,7 @@
 <p>那么设 <span class="arithmatex">\(s_{l,r,d,u}\)</span> 表示 <span class="arithmatex">\(\sum_{i=l}^r\sum_{j=d}^u a_{ij}\)</span>。</p>
 <p>演示图如下：</p>
 <p><img alt="" src="../../img/basic/prefix-sum/2d.jpg" /></p>
-<p>故</p>
-<div class="arithmatex">\[
-s_{l,r,d,u} = s_{1,1,r,u} - s_{1,1,l-1,u} - s_{1,1,r,u-1} + s_{1,1,l-1,d-1}
-\]</div>
+<p>故 $ s_{l,r,d,u} = s_{1,1,r,u} - s_{1,1,l-1,u} - s_{1,1,r,u-1} + s_{1,1,l-1,d-1} $。</p>
 <p>注意到 <span class="arithmatex">\(s_{l,r,d,u}\)</span> 的值只与 <span class="arithmatex">\(s_{1,1,*,*}\)</span> 的值相关，所以我们可以只计算 <span class="arithmatex">\({s_{1,1,d,u}}\)</span> 的值即可，这样就可以优化到 <span class="arithmatex">\(O(n^2)\)</span>。</p>
 <p>容易推得 <span class="arithmatex">\(s_{1,1,d,u} = s_{1,1,d-1,u} + s_{1,1,d,u-1} - s_{1,1,d-1,u-1} + a_{d,u}\)</span>。</p>
 <p>于是就可以省去前两维，得到 <span class="arithmatex">\(s_{d,u} = s_{d-1,u} + s_{d,u-1} - s_{d-1,u-1} + a_{d,u}\)</span>。</p>
