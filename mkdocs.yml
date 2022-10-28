@@ -1,4 +1,14 @@
 site_name: OI Notes
+site_description: OI Notes by shuzhouliu
+site_author: shuzhouliu
+site_url: https://notes.shuzhouliu.bio
+strict: false
+
+copyright: "Copyright &copy; 2022 Shuzhou Liu"
+
+nav:
+  - 基础算法:
+    - 前缀和: basic/prefix-sum.md
 
 theme:
   name: material
