@@ -17,7 +17,7 @@ int query (int l, int r) {
         sum += a[i];
     return sum;
 }
-````
+```
 
 我们可以发现，$\sum_{i=l}^r a_i = \sum_{i=1}^{r}a_i-\sum_{i=1}^{l-1}a_i$，所以我们可以在 $O(n)$ 时间内预计算 $\{s_n\}=\sum_{i=1}^{n}a_i$：
 
