@@ -25,11 +25,22 @@ theme:
     - search.share
 
 plugins:
-  - search:
-      lang: ja
+  - search
   - tags
   
 markdown_extensions:
+  - abbr
+  - admonition
+  - attr_list
+  - def_list
+  - footnotes
+  - toc:
+      permalink: true
+      slugify: !!python/object/apply:pymdownx.slugs.slugify
+        kwds:
+          case: lower
+  - tables
+
   - pymdownx.arithmatex:
       generic: true
   - pymdownx.betterem
